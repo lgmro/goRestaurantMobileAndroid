@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Go Restaurant</string>
+    <string name="app_name">GoRestaurant</string>
+
+    // Login Screen
+    <string name="subtitle_login">Italian food, yes.</string>
+    <string name="phrase_login">A real experience Italian.</string>
+    <string name="signInButton_login">Sign in on restaurant</string>
 </resources>
