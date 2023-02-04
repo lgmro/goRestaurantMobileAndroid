@@ -2,7 +2,7 @@ package com.lgmro.gorestaurant
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.lgmro.gorestaurant.presentation.LoginActivity
+import com.lgmro.gorestaurant.presentation.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

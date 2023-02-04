@@ -1,4 +1,4 @@
-package com.lgmro.gorestaurant.presentation
+package com.lgmro.gorestaurant.presentation.login
 
 import android.content.Context
 import android.content.Intent

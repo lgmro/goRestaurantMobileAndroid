@@ -19,7 +19,8 @@ class App : Application() {
                 serviceModule,
                 repositoryModule,
                 useCaseModule,
-                viewModelModule
+                viewModelModule,
+                utilsModule
             )
         }
     }
