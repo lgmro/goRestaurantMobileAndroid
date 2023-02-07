@@ -36,6 +36,7 @@ class LoginFragment : BaseFragment() {
         ).apply {
             viewModel = this@LoginFragment.viewModel
             lifecycleOwner = viewLifecycleOwner
+            this@LoginFragment.eventTrigger = this@LoginFragment.viewModel
         }
         return binding.root
     }

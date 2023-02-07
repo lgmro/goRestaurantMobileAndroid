@@ -4,10 +4,9 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.lgmro.gorestaurant.presentation.utils.events.EventTrigger
-import org.koin.android.ext.android.inject
 
 abstract class BaseFragment : Fragment() {
-    private val eventTrigger: EventTrigger by inject()
+    var eventTrigger: EventTrigger? = null
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -18,8 +17,10 @@ abstract class BaseFragment : Fragment() {
 
     private fun subscribeEvents() {
         lifecycleScope.launchWhenStarted {
-            eventTrigger.sendEventFlow.collect { event ->
-                onEvent(event)
+            eventTrigger?.sendEventFlow.let {
+                it?.collect { event ->
+                    onEvent(event)
+                }
             }
         }
     }

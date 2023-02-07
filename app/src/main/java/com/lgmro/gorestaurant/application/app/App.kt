@@ -6,7 +6,6 @@ import com.lgmro.gorestaurant.application.di.retrofitModule
 import com.lgmro.gorestaurant.application.di.serviceModule
 import com.lgmro.gorestaurant.application.di.useCaseModule
 import com.lgmro.gorestaurant.application.di.viewModelModule
-import com.lgmro.gorestaurant.application.di.utilsModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -24,8 +23,7 @@ class App : Application() {
                 serviceModule,
                 repositoryModule,
                 useCaseModule,
-                viewModelModule,
-                utilsModule
+                viewModelModule
             )
         }
     }
