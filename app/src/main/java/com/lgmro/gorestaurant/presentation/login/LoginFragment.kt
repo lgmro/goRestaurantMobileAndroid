@@ -15,8 +15,12 @@ class LoginFragment : BaseFragment() {
     private val viewModel: LoginViewModel by inject()
     private lateinit var binding: FragmentLoginBinding
     override fun onEvent(event: Any) {
-        when(event) {
-            is LoginEvent.NavigateToSignUpScreen -> Snackbar.make(binding.root, "Screen Login Sign UP", Snackbar.LENGTH_LONG).show()
+        when (event) {
+            is LoginEvent.NavigateToSignUpScreen -> Snackbar.make(
+                binding.root,
+                "Screen Login Sign UP",
+                Snackbar.LENGTH_LONG
+            ).show()
         }
     }
 

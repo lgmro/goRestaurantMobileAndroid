@@ -1,4 +1,4 @@
-package com.lgmro.gorestaurant.presentation.utils
+package com.lgmro.gorestaurant.presentation.utils.extensions
 
 import kotlinx.coroutines.channels.Channel
 

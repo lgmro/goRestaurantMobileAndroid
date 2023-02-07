@@ -1,6 +1,6 @@
 package com.lgmro.gorestaurant.presentation.utils.events
 
-import com.lgmro.gorestaurant.presentation.utils.triggerSendEvent
+import com.lgmro.gorestaurant.presentation.utils.extensions.triggerSendEvent
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 

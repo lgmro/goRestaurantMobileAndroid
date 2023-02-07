@@ -6,7 +6,7 @@ import androidx.lifecycle.lifecycleScope
 import com.lgmro.gorestaurant.presentation.utils.events.EventTrigger
 import org.koin.android.ext.android.inject
 
-abstract class BaseFragment() : Fragment() {
+abstract class BaseFragment : Fragment() {
     private val eventTrigger: EventTrigger by inject()
 
     override fun onAttach(context: Context) {
