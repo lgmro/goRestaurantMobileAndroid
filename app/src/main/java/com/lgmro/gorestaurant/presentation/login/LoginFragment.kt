@@ -21,6 +21,11 @@ class LoginFragment : BaseFragment() {
                 "Screen Login Sign UP",
                 Snackbar.LENGTH_LONG
             ).show()
+            is LoginEvent.ShowPopUpNetworkUnavailable -> Snackbar.make(
+                binding.root,
+                "Network unavailable",
+                Snackbar.LENGTH_LONG
+            ).show()
         }
     }
 
